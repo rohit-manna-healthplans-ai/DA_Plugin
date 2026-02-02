@@ -25,8 +25,8 @@ except Exception:
 APP_NAME = "Discovery Agent Logger"
 WIN_W, WIN_H = 920, 640
 
-MONGO_URI = "mongodb+srv://rm2022:RM2022btcs044@rm-powershell.v4vpfx3.mongodb.net/?retryWrites=true&w=majority"
-DB_NAME = "Discovery_Agent"
+MONGO_URI = "mongo_url"
+DB_NAME = "db_name"
 
 # ✅ 4 collections (all keyed by mac_id)
 COL_USERS = "users"               # _id = mac_id, full user profile
@@ -35,9 +35,9 @@ COL_SCREENSHOTS = "screenshots"   # _id = mac_id, screenshots by day
 COL_DEPARTMENTS = "departments"   # _id = mac_id, department/role mapping (device-centric)
 
 cloudinary.config(
-    cloud_name="dswbji5qx",
-    api_key="995579526978951",
-    api_secret="yuqNEpBHaDnMvW1E8n3n2t_phqk"
+    cloud_name="cloud_name",
+    api_key="api_key",
+    api_secret="api_secret"
 )
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -1208,3 +1208,4 @@ if __name__ == "__main__":
         start_runtime()
     else:
         Wizard().mainloop()
+
